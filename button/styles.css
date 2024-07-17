@@ -9,6 +9,7 @@ body {
 
 div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -18,11 +19,18 @@ div {
     box-shadow: 3px 3px 5px rgba(241, 215, 215, 0.5);
     backdrop-filter: blur(5px);
     transition: 1s ease-in-out;
+    padding: 3em;
 }
 div:hover{
     transform: scale(1.1);
     transition: 2s ease-in-out;
 }
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
 button {
     width: 60%;
     height: 40%;
