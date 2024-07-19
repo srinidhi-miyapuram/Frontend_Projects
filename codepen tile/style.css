@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 35em;
+    height: 25em;
+    padding: 3em;
+    background-color: rgba(91, 86, 78, 0.5);
+    transition: 1s ease-in-out;
+}
+
+.container .image_container {
+    width: 100%;
+    height: 80%;
+}
+
+.image_container img {
+    height: 20em;
+    object-fit: contain;
+}
+
+.sub_image {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5em;
+    padding: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.sub_image img {
+    width: 5em;
+    height: fit-content;
+    border-radius: 25px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 5em;
+    width: 41em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image_container h4 {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+
+.sub_image h6 {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+.user_options {
+    display: none;
+}
+
+.user_options button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 6em;
+    height: 3em;
+    background-color: rgb(91, 86, 78);
+    border: none;
+    border-radius: 25px;
+    margin: 0.5em;
+    color: white;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.user_options button p {
+    padding: 1em;
+    width: 1em;
+}
+
+.container:hover {
+    height: 30em;
+    transition: 2s ease-in-out;
+}
+
+.container:hover .user_options{
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 2em;
+    justify-content: flex-end;
+    padding-top: 1em;
+}

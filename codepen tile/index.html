@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image_container">
+            <img src="images/colorful.png" alt="ColorFul">
+            <div class="sub_image">
+                <img src="./images/cat.jpg" alt="Cat">
+                <div class="content">
+                    <h4>ColorFul Life</h4>
+                    <h6>Srinidhi</h6>
+                </div>
+            </div>
+        </div>
+        <div class="user_options">
+            <button onclick="button_clicked('likes')">
+                <?xml version="1.0" ?><svg class="bi bi-heart" fill="currentColor" height="20" viewBox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>
+                <p class="likes" id="likes">0</p>
+            </button>
+            <button onclick="button_clicked('comments')">
+                <?xml version="1.0" ?><svg viewBox="0 0 512 512" fill="currentColor"  height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z"/></svg>
+                <p class="comments" id="comments">0</p>
+            </button>
+        </div>
+    </div>
+</body>
+<script>
+    function button_clicked(name) {
+        var count = parseInt(document.getElementById(name).innerText);
+        document.getElementById(name).innerText = count + 1;
+    }
+</script>
+</html>
