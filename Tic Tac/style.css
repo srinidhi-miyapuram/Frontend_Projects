@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+table td {
+    border: 2px solid black;
+}
+
+table td {
+    text-align: center;
+    width: 53px;
+    height: 53px;
+}
