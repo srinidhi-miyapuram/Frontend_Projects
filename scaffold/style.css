@@ -1,0 +1,104 @@
+.navbar {
+    margin: 0;
+}
+
+.item img {
+    height: 80vh !important;
+    width: 100%;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body form input,
+label,
+select {
+    margin-bottom: 10px;
+    padding: 0.5em;
+}
+
+.head {
+    text-align: center;
+}
+
+/* Image */
+
+.featurette {
+    position: relative;
+    top: 5em;
+    padding: 2em;
+}
+
+/* .row {
+    display: flex;
+    position: relative;
+    top: 10em;
+    justify-content: space-evenly;
+    margin: 0;
+} */
+
+/* .row::before {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #5a5a5a;
+    box-sizing: border-box;
+    margin: 0;
+} */
+
+.center-card {
+    position: relative;
+    top: 15vh;
+}
+
+.card-img-top {
+    object-fit: fill;
+    height: 35vh;
+    width: 50vw;
+}
+
+.card-body {
+    text-align: center;
+    padding: 2em;
+}
+
+.card-body p {
+    text-align: justify;
+}
+
+#carousel-example-generic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em;
+    border-radius: 5em;
+}
+
+.carousel-inner {
+    border-radius: 5em;
+}
+
+.carousel-control {
+    border-radius: 4em;
+    background-color: none;
+    background-image: none;
+}
+
+.about-head {
+    text-align: center;
+    font-size: 4em;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
