@@ -1,0 +1,53 @@
+.bar_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    text-align: center;
+    display: flex;
+}
+
+.bar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.bar li {
+    list-style-type: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.bar hr {
+    width: 4rem;
+    border: 2px solid gray;
+    height: 0;
+    position: relative;
+    top: 5px;
+}
+
+.bar_btn {
+    position: relative;
+}
+
+.bar_btn button {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 6rem;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.active {
+    border: 2px solid cadetblue !important;
+}
