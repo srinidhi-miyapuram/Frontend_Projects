@@ -10,11 +10,11 @@ function clicked() {
 }
 
 function add_val(e) {
-    if (curr_val > 1) {
-        btn_list[0].disabled = false;
-    }
     if (curr_val < 4) {
         curr_val += 1;
+    }
+    if (curr_val > 1) {
+        btn_list[0].disabled = false;
     }
     if (curr_val == 4) {
         btn_list[1].disabled = true;
@@ -34,6 +34,9 @@ function del_val(e) {
     }
     if (curr_val < 4) {
         btn_list[1].disabled = false;
+    }
+    if (curr_val == 1) {
+        btn_list[0].disabled = true;
     }
 
     for (let i = curr_val; i < 4; i++) {
