@@ -1,0 +1,139 @@
+:root {
+    --bg_color: rgb(228, 114, 8);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.webpage {
+    transform-origin: top left;
+    padding: 50px;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    transition: transform 0.5s linear;
+    /* z-index: 100; */
+}
+
+.webpage.show_nav {
+    transform: rotate(-20deg);
+}
+
+.header_page {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.links a {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.nav {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 14rem;
+    left: -10%;
+    top: -16%;
+    background-color: var(--bg_color);
+    transition: transform 0.5s linear;
+    z-index: 200;
+}
+
+.webpage.show_nav .nav {
+    transform: rotate(-70deg);
+}
+
+.nav button {
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    font-size: 1rem;
+    color: white;
+}
+
+.nav button:focus {
+    outline: none;
+}
+
+.nav #open {
+    top: 55%;
+    left: 65%;
+}
+
+.nav #close {
+    top: 55%;
+    left: 45%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.webpage.show_nav + .links a {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+.links {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+}
+
+.links a {
+    color: black;
+    margin: 0.5rem auto;
+    transform: translateX(-200%);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.links a > i {
+    font-size: 1.3rem;
+}
+
+.links a:nth-child(1) {
+    margin-left: 2rem;
+    transition: 0.2s ease-in-out;
+}
+.links a:nth-child(2) {
+    margin-left: 3rem;
+    transition: 0.3s ease-in-out;
+}
+.links a:nth-child(3) {
+    margin-left: 4.5rem;
+    transition: 0.4s ease-in-out;
+}
+
+.article {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.article h1,
+h2,
+h6 {
+    margin: 0;
+}
+
+.article p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.article img {
+    max-width: 100%;
+}
