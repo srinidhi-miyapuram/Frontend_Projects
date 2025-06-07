@@ -17,4 +17,7 @@ img {
     text-align: center;
     top: 50%;
     left: 50%;
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
 }

@@ -1,15 +1,16 @@
 function load_page() {
     let elem = document.getElementById("image");
     let load_num = document.getElementById("load-count");
-    var count = 0;
-    console.log(count);
+    var count = 100;
 
     setInterval(() => {
-        if (count < 100) {
-            count += 1;
-            load_num.innerText = `${count}%`;
-            elem.style.opacity = `${count / 100}`;
-            console.log(count);
+        if (count > 0) {
+            count -= 1;
+            elem.style.filter = `blur(${count}px)`;
+            load_num.innerText = `${100 - count}%`;
+            console.log(elem.style.filter);
+        } else {
+            load_num.style.opacity = "0";
         }
     }, 30);
 }
