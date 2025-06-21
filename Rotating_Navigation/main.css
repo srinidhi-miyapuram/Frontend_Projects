@@ -137,3 +137,8 @@ h6 {
 .article img {
     max-width: 100%;
 }
+
+.box{
+    width: 400px;
+    height: 200px;
+}

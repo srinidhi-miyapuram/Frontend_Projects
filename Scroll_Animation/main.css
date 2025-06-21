@@ -1,0 +1,60 @@
+:root {
+  --back-color: rgb(24, 106, 212);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120%;
+}
+
+.box {
+  width: 300px;
+  height: 150px;
+  background-color: var(--back-color);
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+  border-radius: 25px;
+  box-shadow: 5px 3px 10px gray;
+  position: relative;
+}
+
+.anime-left {
+  animation: leftRightAnime 2s;
+}
+
+.anime-right {
+  animation: rightLeftAnime 2s;
+}
+
+@keyframes leftRightAnime {
+  from {
+    left: -800px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes rightLeftAnime {
+  from {
+    right: -800px;
+  }
+  to {
+    right: 0px;
+  }
+}
